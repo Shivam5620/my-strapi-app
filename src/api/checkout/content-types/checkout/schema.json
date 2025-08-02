@@ -1,0 +1,28 @@
+{
+  "collectionName": "checkouts",
+  "info": {
+    "singularName": "checkout",
+    "pluralName": "checkouts",
+    "displayName": "Checkout"
+  },
+  "attributes": {
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "products": {
+      "type": "json",
+      "required": true
+    },
+    "amount": {
+      "type": "integer"
+    },
+    "stripeSessionId": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "default": "pending"
+    }
+  }
+}
